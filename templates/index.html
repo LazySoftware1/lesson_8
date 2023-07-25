@@ -6,7 +6,7 @@
 {% block content %}
 <ul class="nav nav-pills sticky-top bg-white nav-fill">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="index.html">
+    <a class="nav-link active" aria-current="page" href="{% url 'main-page' %}">
       <span style="font-weight: bold;">Главная</span>
     </a>
   </li>
@@ -15,22 +15,22 @@
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="advertisement-post.html">
+    <a class="nav-link" href="{% url 'advertisement-post' %}">
       <span style="font-weight: bold;">Разместить объявление</span>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="register.html">
+    <a class="nav-link" href="{% url 'register' %}">
       <span style="font-weight: bold;">Регистрация</span>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="login.html">
+    <a class="nav-link" href="{% url 'login' %}">
       <span style="font-weight: bold;">Войти</span>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="profile.html">
+    <a class="nav-link" href="{% url 'profile' %}">
       <span style="font-weight: bold;">Профиль</span>
     </a>
   </li>
@@ -178,25 +178,24 @@
 </div>
 <footer style="padding: 100px;" class="bg-primary">
   <nav class="navbar navbar-expand-sm navbar-dark">
-    <a class="navbar-brand" href="#">Добавьте</a>
+    <a class="navbar-brand">Связь с разработчиком👉</a>
     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
             aria-label="Toggle navigation"></button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
       <ul class="navbar-nav me-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" href="#" aria-current="page">сюда<span
+          <a class="nav-link active" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" aria-current="page">Курсы по программированию<span
                   class="visually-hidden">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">что</a>
-        </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
-             aria-expanded="false">хотите</a>
+          <a class="nav-link dropdown-toggle"  id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+             aria-expanded="false">Социальные сети</a>
           <div class="dropdown-menu" aria-labelledby="dropdownId">
-            <a class="dropdown-item" href="#">например</a>
-            <a class="dropdown-item" href="#">ссылки на социальные сети</a>
+            <a class="dropdown-item" href="https://vk.com/id697983987">VK</a>
+            <a class="dropdown-item" href="https://www.instagram.com/alexvalpro/?next=%2F">Instagram</a>
+            <a class="dropdown-item">Telegram @qlxlwlelz</a>
+            <a class="dropdown-item">Спасибо что пользуетесь нашим сайтом <3</a>
           </div>
         </li>
       </ul>
@@ -208,5 +207,3 @@
   </nav>
 </footer>
 {% endblock %}
-
-</html>

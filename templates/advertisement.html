@@ -14,31 +14,31 @@
 <body>
   <ul class="nav nav-pills sticky-top bg-white nav-fill">
     <li class="nav-item">
-      <a class="nav-link" href="index.html">
+      <a class="nav-link" href="{% url 'main-page' %}">
         <span style="font-weight: bold;">Главная</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="top-sellers.html"><span style="font-weight: bold;">Топ продавцов</span>
+      <a class="nav-link" href="{% url 'top-sellers' %}"><span style="font-weight: bold;">Топ продавцов</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="advertisement-post.html">
+      <a class="nav-link" href="{% url 'advertisement-post' %}">
         <span style="font-weight: bold;">Разместить объявление</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="register.html">
+      <a class="nav-link" href="{% url 'register' %}">
         <span style="font-weight: bold;">Регистрация</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="login.html">
+      <a class="nav-link" href="{% url 'login' %}">
         <span style="font-weight: bold;">Войти</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="profile.html">
+      <a class="nav-link" href="{% url 'profile' %}">
         <span style="font-weight: bold;">Профиль</span>
       </a>
     </li>
@@ -59,7 +59,7 @@
       <div class="row g-0">
         <div class="col-md-4">
           <a href="#" class="nav-link">
-            <img src="img/adv.png" class="img-fluid rounded-start" alt="Card title">
+            <img src="{% static 'img/item.png' %}" class="img-fluid rounded-start" alt="Card title">
           </a>
         </div>
         <div class="col">
