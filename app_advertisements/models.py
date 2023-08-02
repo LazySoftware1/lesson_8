@@ -7,6 +7,7 @@ class Advertisements(models.Model):
     auction = models.BooleanField("Торг", help_text="Отметье, если торг уместен")
     created_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
+
     def __str__(self):
         return f"Advertisement(id={self.id}, title={self.title}, price={self.price})"
 
